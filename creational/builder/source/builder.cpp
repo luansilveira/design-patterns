@@ -1,6 +1,6 @@
-//
-// Created by Luan Silveira on 23/07/2021.
-//
+/**
+ * Copyright 2021 Luan Silveira
+ */
 
 #include "builder.hpp"
 

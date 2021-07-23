@@ -1,6 +1,6 @@
-//
-// Created by Luan Silveira on 23/07/2021.
-//
+/**
+ * Copyright 2021 Luan Silveira
+ */
 
 #ifndef DESIGN_PATTERNS_BEHAVIORAL_BUILDER_SOURCE_BUILDER_HPP_
 #define DESIGN_PATTERNS_BEHAVIORAL_BUILDER_SOURCE_BUILDER_HPP_
