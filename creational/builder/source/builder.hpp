@@ -6,13 +6,12 @@
 #define DESIGN_PATTERNS_BEHAVIORAL_BUILDER_SOURCE_BUILDER_HPP_
 
 #include <iostream>
-#include <sstream>
 #include <string>
 #include <vector>
 
 class HtmlElement {
  public:
-  HtmlElement(const std::string &name, const std::string &text = "");
+  explicit HtmlElement(const std::string &name, const std::string &text = "");
 
   void add_child(const std::string &name, const std::string &text);
 

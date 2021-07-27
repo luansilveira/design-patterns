@@ -4,6 +4,8 @@
 
 #include "builder.hpp"
 
+#include <sstream>
+
 HtmlElement::HtmlElement(const std::string& name, const std::string& text)
     : name_(name), text_(text) {}
 

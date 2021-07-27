@@ -35,3 +35,12 @@ TEST(HtmlBuilderTestSuite, Paragraph) {
 )";
   ASSERT_EQ(expect_result, builder.str());
 }
+
+TEST(HtmlBuilderTestSuite, EmptyHtml) {
+  ASSERT_TRUE(true);
+  HtmlBuilder builder{"body"};
+  std::string expect_result = R"(<body>
+</body>
+)";
+  ASSERT_EQ(expect_result, builder.str());
+}
