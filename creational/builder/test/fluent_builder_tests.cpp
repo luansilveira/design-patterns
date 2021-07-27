@@ -7,7 +7,6 @@
 #include "fluent_builder.hpp"
 
 TEST(FluentHtmlBuilderTestSuite, UnorderedList) {
-  ASSERT_TRUE(true);
   auto builder = FluentHtmlElement::Create("ul")
                      .AddChild("li", "Hello")
                      .AddChild("li", "World");
@@ -24,7 +23,6 @@ TEST(FluentHtmlBuilderTestSuite, UnorderedList) {
 }
 
 TEST(FluentHtmlBuilderTestSuite, Paragraph) {
-  ASSERT_TRUE(true);
   auto builder = FluentHtmlElement::Create("body")
                      .AddChild("p", "This is a paragraph");
   std::string expect_result = R"(<body>
@@ -37,7 +35,6 @@ TEST(FluentHtmlBuilderTestSuite, Paragraph) {
 }
 
 TEST(FluentHtmlBuilderTestSuite, EmptyHtml) {
-  ASSERT_TRUE(true);
   auto builder = FluentHtmlElement::Create("body");
   std::string expect_result = R"(<body>
 </body>
@@ -46,7 +43,6 @@ TEST(FluentHtmlBuilderTestSuite, EmptyHtml) {
 }
 
 TEST(FluentHtmlBuilderTestSuite, FluentHtmlElementConversion) {
-  ASSERT_TRUE(true);
   FluentHtmlElement element = FluentHtmlElement::Create("body");
   std::string expect_result = R"(<body>
 </body>
@@ -55,7 +51,6 @@ TEST(FluentHtmlBuilderTestSuite, FluentHtmlElementConversion) {
 }
 
 TEST(FluentHtmlBuilderTestSuite, FluentHtmlElementBuild) {
-  ASSERT_TRUE(true);
   FluentHtmlElement element = FluentHtmlElement::Create("body").Build();
   std::string expect_result = R"(<body>
 </body>
