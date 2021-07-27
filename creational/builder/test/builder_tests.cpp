@@ -9,8 +9,8 @@
 TEST(HtmlBuilderTestSuite, UnorderedList) {
   ASSERT_TRUE(true);
   HtmlBuilder builder{"ul"};
-  builder.add_child("li", "Hello");
-  builder.add_child("li", "World");
+  builder.AddChild("li", "Hello");
+  builder.AddChild("li", "World");
   std::string expect_result = R"(<ul>
   <li>
     Hello
@@ -20,20 +20,20 @@ TEST(HtmlBuilderTestSuite, UnorderedList) {
   </li>
 </ul>
 )";
-  ASSERT_EQ(expect_result, builder.str());
+  ASSERT_EQ(expect_result, builder.Str());
 }
 
 TEST(HtmlBuilderTestSuite, Paragraph) {
   ASSERT_TRUE(true);
   HtmlBuilder builder{"body"};
-  builder.add_child("p", "This is a paragraph");
+  builder.AddChild("p", "This is a paragraph");
   std::string expect_result = R"(<body>
   <p>
     This is a paragraph
   </p>
 </body>
 )";
-  ASSERT_EQ(expect_result, builder.str());
+  ASSERT_EQ(expect_result, builder.Str());
 }
 
 TEST(HtmlBuilderTestSuite, EmptyHtml) {
@@ -42,5 +42,5 @@ TEST(HtmlBuilderTestSuite, EmptyHtml) {
   std::string expect_result = R"(<body>
 </body>
 )";
-  ASSERT_EQ(expect_result, builder.str());
+  ASSERT_EQ(expect_result, builder.Str());
 }
