@@ -1,5 +1,5 @@
-/**
- * Copyright 2021 Luan Silveira
+/*
+ * Copyright (c) 2021 Luan Silveira
  */
 
 #ifndef DESIGN_PATTERNS_CREATIONAL_FACTORY_SOURCE_DRINK_HPP_

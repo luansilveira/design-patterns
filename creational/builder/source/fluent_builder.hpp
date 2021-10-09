@@ -1,5 +1,5 @@
-/**
- * Copyright 2021 Luan Silveira
+/*
+ * Copyright (c) 2021 Luan Silveira
  */
 
 #ifndef DESIGN_PATTERNS_BEHAVIORAL_BUILDER_SOURCE_FLUENT_BUILDER_HPP_

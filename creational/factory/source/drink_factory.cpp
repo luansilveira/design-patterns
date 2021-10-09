@@ -1,5 +1,5 @@
-/**
- * Copyright 2021 Luan Silveira
+/*
+ * Copyright (c) 2021 Luan Silveira
  */
 
 #include "drink_factory.hpp"
