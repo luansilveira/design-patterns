@@ -5,6 +5,7 @@
 #ifndef DESIGN_PATTERNS_CREATIONAL_FACTORY_SOURCE_DRINK_FACTORY_HPP_
 #define DESIGN_PATTERNS_CREATIONAL_FACTORY_SOURCE_DRINK_FACTORY_HPP_
 
+#include <functional>
 #include <map>
 #include <memory>
 #include <string>

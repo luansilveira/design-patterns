@@ -29,7 +29,7 @@ class Person {
 
 class PersonBuilderBase {
  public:
-  PersonBuilderBase(Person &person);
+  explicit PersonBuilderBase(Person &person);
 
   PersonAddressBuilder lives();
   PersonJobBuilder works();
@@ -50,7 +50,7 @@ class PersonBuilder : public PersonBuilderBase {
 class PersonAddressBuilder : public PersonBuilderBase {
   using Self = PersonAddressBuilder;
  public:
-  PersonAddressBuilder(Person &p);
+  explicit PersonAddressBuilder(Person &p);
 
   Self &at(const std::string &street_address);
 
@@ -62,7 +62,7 @@ class PersonAddressBuilder : public PersonBuilderBase {
 class PersonJobBuilder : public PersonBuilderBase {
   using Self = PersonJobBuilder;
  public:
-  PersonJobBuilder(Person &p);
+  explicit PersonJobBuilder(Person &p);
 
   Self &at(const std::string &company_name);
 

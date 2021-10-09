@@ -5,7 +5,7 @@
 #include "person_builder.hpp"
 
 PersonBuilder Person::create() {
-  return PersonBuilder();
+  return {};
 }
 PersonBuilderBase::PersonBuilderBase(Person& person) : person_ref_{person} {}
 

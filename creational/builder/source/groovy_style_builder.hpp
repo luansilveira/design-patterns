@@ -20,12 +20,12 @@ struct Tag {
 
   std::string Str(int indent = 0) const;
 
-  Tag(const std::string &name, const std::string &text = "");
+  explicit Tag(const std::string &name, const std::string &text = "");
   Tag(const std::string &name, const std::vector<Tag> &children);
 };
 
 struct P : Tag {
-  P(const std::string &text);
+  explicit P(const std::string &text);
   P(std::initializer_list<Tag> children);
 };
 
