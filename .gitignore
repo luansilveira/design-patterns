@@ -32,7 +32,8 @@
 *.app
 
 # Build directories
-cmake-build-*/
+build/
+
 
 # Clion specific exclusions
 # https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
