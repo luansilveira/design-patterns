@@ -12,6 +12,7 @@ class Drink {
 };
 
 class Tea: public Drink {
+ public:
   void prepare(int volume) override;
 };
 

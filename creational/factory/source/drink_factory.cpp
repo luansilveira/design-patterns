@@ -21,3 +21,20 @@ std::unique_ptr<Drink> DrinkFactory::make_drink(const std::string &name,
   drink->prepare(volume_ml);
   return drink;
 }
+
+DrinkMethodFactory::DrinkMethodFactory() {
+  factories["coffee"] = []() {
+    auto drink = std::make_unique<Coffee>();
+    drink->prepare(50);
+    return drink;
+  };
+  factories["tea"] = []() {
+    auto drink = std::make_unique<Tea>();
+    drink->prepare(200);
+    return drink;
+  };
+}
+
+std::unique_ptr<Drink> DrinkMethodFactory::make_drink(const std::string &name) {
+  return factories.at(name)();
+}

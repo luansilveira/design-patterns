@@ -40,4 +40,14 @@ class DrinkFactory {
   std::map<std::string, std::unique_ptr<AbstractDrinkFactory>> factories;
 };
 
+class DrinkMethodFactory {
+ public:
+  DrinkMethodFactory();
+  virtual ~DrinkMethodFactory() = default;
+  std::unique_ptr<Drink> make_drink(const std::string &name);
+
+ private:
+  std::map<std::string, std::function<std::unique_ptr<Drink>()>> factories;
+};
+
 #endif  // DESIGN_PATTERNS_CREATIONAL_FACTORY_SOURCE_DRINK_FACTORY_HPP_
