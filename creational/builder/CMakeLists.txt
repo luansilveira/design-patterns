@@ -1,11 +1,8 @@
-add_library(builder)
-
-target_sources(builder
-        PRIVATE source/builder.cpp
-                source/fluent_builder.cpp
-                source/groovy_style_builder.cpp
-                source/person_builder.cpp)
-
+add_library(builder
+        source/builder.cpp
+        source/fluent_builder.cpp
+        source/groovy_style_builder.cpp
+        source/person_builder.cpp)
 target_include_directories(builder PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/source)
 
 add_executable(builder_tests

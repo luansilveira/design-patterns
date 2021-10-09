@@ -1,10 +1,7 @@
-add_library(factory )
-
-target_sources(factory
-        PRIVATE source/point_factory.cpp
-                source/drink.cpp
-                source/drink_factory.cpp)
-
+add_library(factory
+        source/point_factory.cpp
+        source/drink.cpp
+        source/drink_factory.cpp)
 target_include_directories(factory PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/source)
 
 add_executable(factory_tests
