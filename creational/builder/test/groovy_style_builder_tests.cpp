@@ -8,10 +8,10 @@
 
 TEST(GroovyStyleHtmlBuilderTestSuite, Image) {
   auto html = P {
-        IMG { "http://my_image_url.com"}
+        IMG { "https://my_image_url.com"}
   };
   std::string expect_result = R"(<p>
-  <img url="http://my_image_url.com"/>
+  <img url="https://my_image_url.com"/>
 </p>
 )";
   ASSERT_EQ(expect_result, html.Str());

@@ -1,6 +1,6 @@
-//
-// Created by Luan Silveira on 05/10/2021.
-//
+/**
+ * Copyright 2021 Luan Silveira
+ */
 
 #ifndef DESIGN_PATTERNS_CREATIONAL_FACTORY_SOURCE_DRINK_HPP_
 #define DESIGN_PATTERNS_CREATIONAL_FACTORY_SOURCE_DRINK_HPP_
